@@ -30,6 +30,7 @@ header {
     color: black;
     padding: 0 10px;
     min-height: 20vh;
+   
 
 }
 
@@ -62,10 +63,12 @@ nav {
     flex-wrap: wrap;
     justify-content: space-evenly;
     box-shadow: 0 5px 25px rgb(62, 61, 61);
-    line-height: 2;
-    margin: 0 0 10px 0;
+    line-height: 1.5;
+    margin: 0 0 20px 0;
+    position: relative;
 
 }
+
 
 nav a {
     text-decoration: none;
@@ -82,9 +85,9 @@ nav a:hover {
 
 }
 
-.container {
+/* .container {
     margin: 20px 0;
-}
+} */
 
 .textCarousel {
     background-color: rgb(184, 223, 247);
@@ -93,15 +96,80 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 5px 0 20px 0;
     padding: 10px;
     font-weight: bold;
     box-shadow: 5px 5px 15px lightsteelblue;
 }
 
+.guardian {
+    font-size: 2em;
+}
+
 .secondChild {
+    padding: 20px;
     color: red;
     font-family: 'DM Serif Display', serif;
+}
+
+.guardianText {
+    margin: 20px;
+}
+
+.guardianText p {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.aboutText {
+    color: black;
+    background-color: rgb(236, 231, 231);
+    box-shadow: 5px 5px 15px rgb(75, 74, 74);
+    padding: 20px 40px;
+}
+
+.aboutText p {
+    margin-bottom: 10px;
+}
+
+main {
+    max-width: 88%;
+    margin: 20px auto 10px auto;
+
+}
+
+.doodleCard {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+
+.doodleCard .card {
+    margin: 15px 0;
+
+}
+
+.doodleGal {
+    background-color: rgb(184, 223, 247);
+    height: 15vh;
+    font-size: 1em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0 20px 0;
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: 5px 5px 15px lightsteelblue;
+}
+
+footer {
+
+    margin-top: 25px;
 }
 
 footer div {
@@ -115,7 +183,8 @@ footer div {
 }
 
 footer div img {
-    margin-right: 30px;
+
+    margin: 0 30px;
 }
 
 
