@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.5;
+    background-color: white;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+
+}
+
+p {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    color: black;
+    padding: 0 10px;
+    min-height: 20vh;
+
+}
+
+
+
+.inBorder {
+    border-radius: 5px;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.iconList {
+    background-image: url('../images/poopattern.jpg');
+    opacity: 0.8;
+    border: 2px groove rgb(206, 203, 203);
+    border-radius: 80px;
+    min-height: 150px;
+    min-width: 150px;
+    box-shadow: 0 5px 10px rgb(62, 61, 61);
+    margin: 10px 25px 15px 0;
+}
+
+nav {
+    background-color: rgb(241, 237, 237);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    box-shadow: 0 5px 25px rgb(62, 61, 61);
+    line-height: 2;
+    margin: 0 0 10px 0;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Cabin', sans-serif;
+    margin: 5px 10px 20px 5px;
+    border-radius: 5px;
+    transition: all 0.25s ease-in;
+}
+
+nav a:hover {
+    background-size: 100% 100%;
+    background-color: gray;
+
+}
+
+.container {
+    margin: 20px 0;
+}
+
+.textCarousel {
+    background-color: rgb(184, 223, 247);
+    height: 10vh;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    font-weight: bold;
+    box-shadow: 5px 5px 15px lightsteelblue;
+}
+
+.secondChild {
+    color: red;
+    font-family: 'DM Serif Display', serif;
+}
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 20px 40px 20px;
+
+}
+
+footer div img {
+    margin-right: 30px;
+}
+
+
+
+/* .iconList {
+    display: flex;
+    flex-flow: column;
+    font-size: 5em;
+}
+
+.iconList a:before {
+
+    content: "\00A3";
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 900;
+
+
+} */
