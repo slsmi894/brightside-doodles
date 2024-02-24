@@ -22,6 +22,106 @@ p {
     margin: 0;
 }
 
+
+
+/* .iconList {
+    display: flex;
+    flex-flow: column;
+    font-size: 5em;
+}
+
+.iconList a:before {
+
+    content: "\00A3";
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 900;
+
+
+} */
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: 92vh;
+    background-image: linear-gradient(to top, lightsteelblue 20%, rgb(136, 174, 224) 80%);
+}
+
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+
+.bgBottom {
+    z-index: 5;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+.waveTop {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+    animation: move-wave 3s;
+    -webkit-animation: move-wave 3s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.waveMiddle {
+    background-size: 50% 120px;
+}
+
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
 .titleId {
     font-size: 0.3em;
     color: grey;
@@ -35,12 +135,10 @@ header {
     align-items: center;
     color: black;
     padding: 0 10px;
-    min-height: 20vh;
+    min-height: 22vh;
 
 
 }
-
-
 
 .inBorder {
     border-radius: 5px;
@@ -51,21 +149,25 @@ header {
 }
 
 header h1 {
-    font-weight: bold;
-    font-size: 2.5rem;
-    padding-top: 20px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding-top: 10px;
 }
 
-.iconList {
-    background-image: url('../images/poopattern.jpg');
-    opacity: 0.8;
-    border: 2px groove rgb(206, 203, 203);
-    border-radius: 80px;
-    min-height: 150px;
-    min-width: 150px;
-    box-shadow: 0 5px 10px rgb(62, 61, 61);
-    margin: 10px 25px 15px 0;
+
+.icon {
+    margin-top: 10px;
 }
+.fa {
+    /* padding: 5px; */
+    font-size: 12px;
+    width: 10px;
+    text-decoration: none;
+    /* margin: 2px 5px; */
+    
+}
+
+
 
 nav {
     background-color: rgb(241, 237, 237);
@@ -212,7 +314,7 @@ main {
 
 footer {
 
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 footer div {
@@ -224,108 +326,10 @@ footer div {
     margin: 5px 20px 40px 20px;
 
 }
-
+.mail {
+    margin: 5px 20px 10px 20px;
+}
 footer div img {
 
     margin: 0 30px;
-}
-
-
-
-/* .iconList {
-    display: flex;
-    flex-flow: column;
-    font-size: 5em;
-}
-
-.iconList a:before {
-
-    content: "\00A3";
-    font-family: 'Font Awesome 5 Brands';
-    font-weight: 900;
-
-
-} */
-@keyframes move_wave {
-    0% {
-        transform: translateX(0) translateZ(0) scaleY(1)
-    }
-
-    50% {
-        transform: translateX(-25%) translateZ(0) scaleY(0.55)
-    }
-
-    100% {
-        transform: translateX(-50%) translateZ(0) scaleY(1)
-    }
-}
-
-.waveWrapper {
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    margin: auto;
-}
-
-.waveWrapperInner {
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-    height: 100%;
-    bottom: 92vh;
-    background-image: linear-gradient(to top, lightsteelblue 20%, rgb(136, 174, 224) 80%);
-}
-
-.bgTop {
-    z-index: 15;
-    opacity: 0.5;
-}
-
-.bgMiddle {
-    z-index: 10;
-    opacity: 0.75;
-}
-
-.bgBottom {
-    z-index: 5;
-}
-
-.wave {
-    position: absolute;
-    left: 0;
-    width: 200%;
-    height: 100%;
-    background-repeat: repeat no-repeat;
-    background-position: 0 bottom;
-    transform-origin: center bottom;
-}
-
-.waveTop {
-    background-size: 50% 100px;
-}
-
-.waveAnimation .waveTop {
-    animation: move-wave 3s;
-    -webkit-animation: move-wave 3s;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-}
-
-.waveMiddle {
-    background-size: 50% 120px;
-}
-
-.waveAnimation .waveMiddle {
-    animation: move_wave 10s linear infinite;
-}
-
-.waveBottom {
-    background-size: 50% 100px;
-}
-
-.waveAnimation .waveBottom {
-    animation: move_wave 15s linear infinite;
 }
